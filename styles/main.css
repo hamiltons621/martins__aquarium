@@ -1,0 +1,31 @@
+@import './fish.css';
+@import './quotes.css';
+
+.header {}
+
+.title {
+  align-items: center;
+  border: dotted 2px gold;
+}
+
+.main {
+  display: flex;
+}
+
+.right {
+  flex: 1;
+}
+
+.left {
+  flex: 3;
+}
+
+
+
+
+
+
+
+footer {
+  background-color: navy;
+}

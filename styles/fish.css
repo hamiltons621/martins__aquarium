@@ -1,0 +1,17 @@
+.martins__fishes {
+    border: dotted 2px gold;
+    margin: 10px 0;
+  }
+  
+  .fishes {
+    border: dotted 2px gold;
+    display: flex;
+   
+  }
+  
+  .fish {
+    border: dotted 2px gold;
+    margin: 10px; 
+    width: 200px;
+    flex: 1;
+  }
