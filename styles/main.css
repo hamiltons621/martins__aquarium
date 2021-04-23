@@ -1,31 +1,208 @@
 @import './fish.css';
 @import './quotes.css';
+@import './locations.css';
+@import './caretips.css';
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
 
-.header {}
+body {
+  margin: 0; 
+  padding: 0;
+}
+
+.header--image {
+  background: url("/images/background.jpg") no-repeat #000;
+  background-size: cover;
+  background-clip: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  flex: display;
+  justify-content: center;
+  flex-basis: 20%;
+}
+
+
+.header--overlay {
+  background-color: black;
+  background-size: cover;
+  opacity: .5;
+  width: 100%;
+  height: 400px;
+  flex: 1;
+  position: absolute;
+}
+
+.logo__container {
+  flex: 1;
+  padding: 80px 0 80px 120px;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  object-fit: cover;
+  flex-shrink: initial; /* why does this make this work?! */
+  overflow: hidden;
+  
+}
 
 .title {
   align-items: center;
-  border: dotted 2px gold;
+  padding: 10px;
+  align-self: center;
+  font-family: 'Capriola', sans-serif;
 }
 
-.main {
+main {
+
   display: flex;
-}
-
-.right {
-  flex: 1;
+  justify-content: center;
 }
 
 .left {
   flex: 3;
 }
 
+.left--cards {
+  flex-basis: 30%;
+  flex-wrap: wrap;
+  min-width: 150px;
+  margin: 5px;  
+}
 
+.left--card--photo__container {
+  min-width: 100%;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+}
 
+.left--card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: initial; /* why does this make this work?! */
+  overflow: hidden;
+}
 
+.left--card__text__padding {
+  padding: 0 15px 10px 15px;
+}
 
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 25pt;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+  text-align: left;
+}
+
+h2.left--titles {
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 20px 5px 12px 5px;
+  
+}
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 10pt;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  list-style: decimal-leading-zero;
+  font-size: 20pt;
+  margin: 0 0 20px 25px;
+}
+
+li p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  list-style: decimal-leading-zero;
+  font-size: 12pt;
+}
+
+.text--black {
+  color: rgb(0, 0, 0);
+}
+
+.bg--gray {
+  background-color: rgb(240, 240, 240);
+}
+
+.bg--white {
+  background-color: white;
+}
+
+.bg--black {
+  background-color: black;
+}
+
+.bg--fuschia {
+  background-color: rgb(255, 177, 245);
+}
+
+.left--box__shadow {
+  box-shadow: 0px 0px 7px rgb(0 0 0 / 8%);
+}
 
 
 footer {
-  background-color: navy;
+  background-color: black;
+  display: flex;
+  color: #fff;
+  padding: 40px 120px 20px 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.contact__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer--title {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.email {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.number {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  border-top: .5px rgba(255, 255, 255, 0.274) solid;
+}
+

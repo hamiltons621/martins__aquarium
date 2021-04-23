@@ -1,8 +1,29 @@
-.quotes {
-    border: dotted 2px gold; 
-  }
+#quotes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 30px 50px 210px;
+  justify-content: center;
+}
+
+.quote__image {
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+}
   
-.quote {
-    border: dotted 2px gold; 
-    margin: 10px;
+.quote__image img {
+  flex-wrap: wrap;
+  flex: 1;
+  width: 70px;
+  padding-bottom: 20px;
+  padding-top: 10px;
   }
+
+.quote {
+  font-family: 'Zilla Slab', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: left;
+  padding-right: 10px;
+}

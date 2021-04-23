@@ -1,0 +1,24 @@
+#locations {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 30px 50px 210px;
+  justify-content: space-between;
+}
+
+.container--location__info {
+  padding: 0 15px 10px 15px;
+}
+
+.location__name {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1em;
+}
+
+.location__caption {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  margin-top: 0.1em;
+  margin-bottom: 1.1em;
+}  /* clean this up and pick one unit :o */

@@ -1,17 +1,23 @@
-.martins__fishes {
-    border: dotted 2px gold;
-    margin: 10px 0;
-  }
+#fishes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 30px 50px 210px;
+  justify-content: space-between;
+}
+
+.fish__name {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1em;
+}
+
+.fish__species {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  margin-top: 0.1em;
+  margin-bottom: 1.1em;
+} 
+
   
-  .fishes {
-    border: dotted 2px gold;
-    display: flex;
-   
-  }
   
-  .fish {
-    border: dotted 2px gold;
-    margin: 10px; 
-    width: 200px;
-    flex: 1;
-  }

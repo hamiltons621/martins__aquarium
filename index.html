@@ -4,85 +4,127 @@
     <meta charset="utf-8">
     <title>Nashville Software School</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <script type="module" src="./scripts/main.js"></script>
-    <header>
-        <img src="" alt=""/>
-        <h1 class="title">Martin's Aquarium</h1>
+    <header class="header--image"> 
+      <div class="header--overlay"></div>
+      <div class="logo__container">
+        <img class="logo" src="images/logo.png" alt="logo"/>
+      </div>
+      
+        <!-- <h1 class="title">Martin's Aquarium</h1> -->
     </header>
     <main>
-        </aside>
         <div class="left">
-            <section class="martins__fishes">
-                <h2>Martin's fish</h2>
-                <section class="fishes">
-                  <article class="fish">
-                      <h3 class="fish_name">name</h3>
-                      <p class="fish_species">species</p>
-                      <img src="" alt=""/>     
-                      <p class="fish_length">length</p>
-                      <p class="fish_location">location</p>
-                      <p class="fish_eats">snacks</p>
-                  </article>
-                  <article class="fish">
-                    <h3 class="fish_name">name</h3>
-                    <p class="fish_species">species</p>
-                    <img src="" alt=""/>     
-                    <p class="fish_length">length</p>
-                    <p class="fish_location">location</p>
-                    <p class="fish_eats">snacks</p>
-                </article>
-                <article class="fish">
-                  <h3 class="fish_name">name</h3>
-                  <p class="fish_species">species</p>
-                  <img src="" alt=""/>     
-                  <p class="fish_length">length</p>
-                  <p class="fish_location">location</p>
-                  <p class="fish_eats">snacks</p>
-              </article>
-            </section>
-            </section>
-            <section class="section--quotes">
-                <article class="quotes">
+            <section id="fishes" class="bg--gray">
+                <h2 id="fishes--header" class="left--titles">Martin's Fish</h2>
+                <article class="fish bg--white left--box__shadow left--cards">
+                  <div class="left--card--photo__container">
+                    <img class="left--card__photo" src="images/fish1.jpeg" alt="fish"/>
+                  </div>
+                  <div class="fish__info left--card__text__padding">
+                    <h3 class="fish__name">Paul</h3>
+                    <p class="fish__species">Puffer Fish</p> 
+                    <p class="fish__length">Length: 6"</p>
+                    <p class="fish__location">Hometown: Mykonos</p>
+                    <p class="fish__eats">Snack: Mussels</p>
+                  </div> <!-- close fish__info -->
+                </article> <!-- close fish -->
+                <article class="fish bg--white left--box__shadow left--cards">
+                  <div class="left--card--photo__container">
+                    <img class="left--card__photo" src="images/fish2.jpeg" alt="fish"/>
+                  </div>
+                  <div class="fish__info left--card__text__padding">
+                    <h3 class="fish__name">Danny</h3>
+                    <p class="fish__species">Demekin</p>    
+                    <p class="fish__length">Length: 3"</p>
+                    <p class="fish__location">Hometown: Tokyo </p>
+                    <p class="fish__eats">Snack: Shrimp</p>
+                  </div> <!-- close fish__info -->
+                </article> <!-- close fish -->
+                <article class="fish bg--white left--box__shadow left--cards">
+                  <div class="left--card--photo__container">
+                    <img class="left--card__photo" src="images/fish3.jpeg" alt="fish"/>
+                  </div>
+                  <div class="fish__info left--card__text__padding">
+                    <h3 class="fish__name">Bubbles</h3>
+                    <p class="fish__species">Sad Goldfish</p>    
+                    <p class="fish__length">Length: 2"</p>
+                    <p class="fish__location">Hometown: Boise</p>
+                    <p class="fish__eats">Fav Snack: Pellets</p>
+                  </div> <!-- close fish__info -->
+                </article> <!-- close fish -->
+            </section> <!-- close fishes section -->
+            <section id="quotes" class="bg--white">
+                <article class="quote__container">
+                    <div class="quote__image"><img src="images/quote.png" alt="quotation mark"/></div>
+                    <p class="quote">Martin's fish are the best fish in the whole wide world. He has all the best knowledge. 10/10. </p>
+                    <p class="quote">- Definitely not Martin</p>
+                    <!-- <p class="quote">quote</p>
                     <p class="quote">quote</p>
-                    <p class="quote">quote</p>
-                    <p class="quote">quote</p>
-                    <p class="quote">quote</p>
+                    <p class="quote">quote</p> -->
                 </article>
-            </section>
-            <section class="section--locations">
-                <article class="locations">
-                    <p class="location"></p>
-                    <img src="" alt=""/>
-                    <p class="caption--location"></p>
-                </article>
-                <article class="locations">
-                    <p class="location"></p>
-                    <img src="" alt=""/>
-                    <p class="caption--location"></p>
-                </article>
-                <article class="locations">
-                    <p class="location"></p>
-                    <img src="" alt=""/>
-                    <p class="caption--location"></p>
-                </article>
-            </section>
+            </section> <!-- close quotes section-->
+            <section id="locations" class="bg--gray">
+              <h2 id="header--locations" class="left--titles">Locations</h2>
+              <article class="location bg--white left--box__shadow left--cards">
+                  <div class="left--card--photo__container">
+                    <img class="left--card__photo" src="images/mykonos.jpeg" alt="Colorful boats on the water in Mykonos"/>
+                  </div> <!-- close photo container -->
+                  <div class="location__info left--card__text__padding">
+                    <h3 class="location__name">Mykonos</h3>
+                    <p class="location__caption">Caption about Boise</p>
+                  </div> 
+                </article>  <!-- close location -->
+                <article class="location bg--white left--box__shadow left--cards">
+                  <div class="left--card--photo__container">
+                    <img class="left--card__photo" src="images/tokyo.jpeg" alt="Young people crossing a crosswalk at a mall in Tokyo"/>
+                  </div> <!-- close photo container -->
+                  <div class="location__info left--card__text__padding">
+                    <h3 class="location__name">Tokyo</h3>
+                    <p class="location__caption">Caption about Boise</p>
+                  </div>
+                </article> <!-- close location -->
+                <article class="location bg--white left--box__shadow left--cards">
+                  <div class="left--card--photo__container">
+                    <img  class="left--card__photo" src="images/boise.jpeg" alt="A run down PetSmart store front"/>
+                  </div> <!-- close photo container -->
+                  <div class="location__info left--card__text__padding">
+                    <h3 class="location__name">Boise</h3>
+                    <p class="location__caption">Caption about Boise</p>
+                  </div>
+                </article>  <!-- close location -->
+            </section> <!-- close locations section -->
         </div>
-        <aside class="right">
-          <h2 class="header--care__tips">Tank Care Tips</h2>
-          <ul class="ul--care__tips">
-              <li class="care__tip">Clean the tank</li>
-              <li class="care__tip">Change the water</li>
-              <li class="care__tip">Swap the filter</li>
-          </ul>
+        <aside class="right--container right--container__bg bg--fuschia">
+          <div class="right--bg__texture">
+            <img src="" alt=""/>
+          </div>
+          <div class="care__tips">
+            <!-- <img class="image--care__tips" src="images/tank__icon.png" alt="icon of fish in tank"/> -->
+            <h2 class="header--care__tips">Tank Tips</h2>
+            <ol class="ol--care__tips">
+                <li class="care__tip"><p></p><p>Clean the tank</p></li>
+                <li class="care__tip"><p></p><p>Change the water</p></li>
+                <li class="care__tip"><p></p><p>Swap the filter</p></li>
+            </ol>
+        </div>
+        </aside>
     </main>
-    <footer class="footer">
-        <h3>Contact Info</h3>
-        <p class="email"></p>
-        <p class="number"></p>
+    <footer class="bg--black">
+      <section class="contact__info">
+        <h3 class="footer--title">Martin's Aquarium</h3>
+        <p class="email">martinsbestfish@hotmail.com</p>
+        <p class="number">615-555-FISH</p>
         <p class="address"></p>
-        <p class="copyright">&#169;</p>
+      </section>
+      <p class="copyright">&#169; copyright</p>
     </footer>
   </body>
 </html>

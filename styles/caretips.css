@@ -1,0 +1,46 @@
+.right--container {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column;
+  flex: 1;
+}
+  
+.right--container__bg {
+  flex-wrap: wrap;
+  flex: 1;
+  position: relative;
+}
+
+.right--bg__texture {
+  background: url("/images/waves.png");
+  background-repeat: repeat-y;
+  background-position-x: center;
+  opacity: .05;
+  object-fit: cover;
+  flex: 1;
+  flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+}
+
+.care__tips {
+  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 10px 0px 30px;
+}
+
+
+.header--care__tips {
+  flex: 1;
+  flex-wrap: wrap;
+  text-align: left;
+  font-family: 'Lato', sans-serif;    
+  font-weight: 900;
+  font-size: 25pt;
+  letter-spacing: 1px;
+  text-transform: uppercase;  
+}
